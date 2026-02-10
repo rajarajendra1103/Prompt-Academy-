@@ -9,7 +9,8 @@ const startMarkers = [
     'const webDevModule4 = {',
     'const webDevModule5 = {',
     'const webDevModule6 = {',
-    'const webDevModule7 = {'
+    'const webDevModule7 = {',
+    'const webDevModule8 = {'
 ];
 
 let lastEnd = 0;
@@ -47,7 +48,8 @@ const mappings = [
     { mod: 'webDevModule4', prefix: 'wp-be-', useIndex: false, defaultPrefix: 'wp-be-' },
     { mod: 'webDevModule5', prefix: 'wp-db-', useIndex: false, defaultPrefix: 'wp-db-' },
     { mod: 'webDevModule6', prefix: 'wp-dp-', useIndex: false, defaultPrefix: 'wp-dp-' },
-    { mod: 'webDevModule7', prefix: 'wp-as-', useIndex: false, defaultPrefix: 'wp-as-' }
+    { mod: 'webDevModule7', prefix: 'wp-as-', useIndex: false, defaultPrefix: 'wp-as-' },
+    { mod: 'webDevModule8', prefix: 'wp-ai-', useIndex: false, defaultPrefix: 'wp-ai-' }
 ];
 
 mappings.forEach((m, i) => {

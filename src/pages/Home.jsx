@@ -27,6 +27,7 @@ const Home = () => {
                             Master the Craft of <br />
                             <span className="gradient-text">Prompt Engineering</span>
                         </h1>
+                        <br />
                         <p className="hero-subtitle">
                             The elite learning platform for AI-driven software development.
                             Build the future of web, apps, and games with precise human-AI collaboration.
