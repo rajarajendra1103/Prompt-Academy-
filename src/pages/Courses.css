@@ -1,0 +1,115 @@
+.courses-page {
+    padding: 120px 2rem 80px;
+}
+
+.courses-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.courses-header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.courses-header p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2.5rem;
+}
+
+@media (max-width: 640px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.course-card {
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-slow);
+}
+
+.course-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.course-icon-wrapper {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.course-icon-wrapper.blue {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.course-icon-wrapper.purple {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.course-icon-wrapper.emerald {
+    background: linear-gradient(135deg, #10b981, #047857);
+}
+
+.course-icon-wrapper.pink {
+    background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.course-card-content {
+    flex: 1;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.course-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.course-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn-explore {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    width: fit-content;
+    transition: background var(--transition-fast);
+}
+
+.btn-explore:hover {
+    background: var(--accent-gradient);
+}

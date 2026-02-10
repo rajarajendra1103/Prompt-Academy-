@@ -1,0 +1,106 @@
+.curriculum-page {
+    padding: 120px 2rem 80px;
+}
+
+.curriculum-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.curriculum-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.curriculum-header p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.modules-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.module-item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color var(--transition-fast);
+}
+
+.module-item:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.module-info {
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.module-number {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: var(--accent-blue);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+}
+
+.module-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.lessons-list {
+    padding: 1rem 0;
+}
+
+.lesson-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background var(--transition-fast);
+}
+
+.lesson-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.lesson-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-play {
+    color: var(--text-secondary);
+}
+
+.lesson-row:hover .icon-play {
+    color: var(--accent-blue);
+}
+
+.lesson-name {
+    font-weight: 500;
+}
+
+.chevron {
+    color: var(--text-secondary);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all var(--transition-fast);
+}
+
+.lesson-row:hover .chevron {
+    opacity: 1;
+    transform: translateX(0);
+}

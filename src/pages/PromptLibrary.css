@@ -1,0 +1,4 @@
+/* Clean up old styles that are now redundant */
+.library-page {
+    padding: 0;
+}
