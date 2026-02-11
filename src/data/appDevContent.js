@@ -4,7 +4,7 @@ export const appDevContent = {
     // MODULE 1: Idea → Prompts
     // ============================================
     'ap-ip-01': {
-        title: 'Introduction to Prompt Engineering for Apps',
+        title: 'Introduction to Prompt',
         summary: 'Learn how prompt engineering transforms app development, allowing you to build complex mobile applications faster and with higher quality using AI tools.',
         objectives: [
             'Understand the role of prompt engineering in the modern app development lifecycle',

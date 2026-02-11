@@ -24,7 +24,7 @@
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-hover);
     padding: 0.5rem 1rem;
     border-radius: 999px;
     width: fit-content;
@@ -130,7 +130,7 @@
 .theory-image-container {
     margin-top: 2rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-subtle);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
     overflow: hidden;
@@ -174,7 +174,7 @@
 
 .prompt-box {
     padding: 1.5rem;
-    background: #000;
+    background: var(--bg-code);
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     display: flex;
@@ -219,7 +219,7 @@
 
 .pitfall-list li {
     list-style: circle;
-    color: #fda4af;
+    color: var(--text-error);
 }
 
 .keywords-grid {
@@ -230,7 +230,7 @@
 
 .keyword-item {
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-subtle);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
 }
@@ -271,7 +271,7 @@
 }
 
 .lesson-section.notes {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-subtle);
     padding: 2rem;
     border-radius: var(--radius-lg);
 }
@@ -305,7 +305,7 @@
 }
 
 .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-hover);
     border-color: var(--accent-blue);
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
@@ -351,7 +351,7 @@
 
 /* Course Navigation Sidebar */
 .course-nav-card {
-    background: rgba(15, 23, 42, 0.4);
+    background: var(--bg-sidebar);
     border-radius: var(--radius-md);
     margin-bottom: 2rem;
     overflow: hidden;
@@ -371,7 +371,7 @@
 }
 
 .nav-module-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav-module-item:last-child {
@@ -393,7 +393,7 @@
 }
 
 .nav-module-header:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-hover);
 }
 
 .nav-module-title {
@@ -402,7 +402,7 @@
 }
 
 .nav-lessons-list {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--bg-subtle);
     padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
@@ -421,7 +421,7 @@
 }
 
 .nav-lesson-link:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-hover);
     color: var(--text-primary);
 }
 

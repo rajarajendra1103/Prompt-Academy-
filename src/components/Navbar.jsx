@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Sparkles, Menu, X, BookOpen, Library, Layout } from 'lucide-react';
+import { Sparkles, Menu, X, BookOpen, Library, Layout, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 import logo from '../assets/logo.png.png';
 import './Navbar.css';
 
 const Navbar = () => {
+    const { theme, toggleTheme } = useTheme();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
@@ -35,24 +37,30 @@ const Navbar = () => {
                     </span>
                 </Link>
 
-                {/* Desktop Nav */}
-                <div className="nav-links-desktop">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.path}
-                            to={link.path}
-                            className={`nav-link-item ${location.pathname === link.path ? 'active' : ''}`}
-                        >
-                            {link.icon}
-                            <span>{link.name}</span>
-                        </Link>
-                    ))}
-                </div>
+                <div className="nav-actions">
+                    {/* Desktop Nav */}
+                    <div className="nav-links-desktop">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.path}
+                                to={link.path}
+                                className={`nav-link-item ${location.pathname === link.path ? 'active' : ''}`}
+                            >
+                                {link.icon}
+                                <span>{link.name}</span>
+                            </Link>
+                        ))}
+                    </div>
 
-                {/* Mobile Toggle */}
-                <button className="nav-toggle-mobile" onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                    <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
+                        {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+                    </button>
+
+                    {/* Mobile Toggle */}
+                    <button className="nav-toggle-mobile" onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Nav */}

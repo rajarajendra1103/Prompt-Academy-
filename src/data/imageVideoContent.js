@@ -3,7 +3,7 @@ export const imageVideoContent = {
     // MODULE 1: Idea → Prompts
     // ============================================
     'iv-ip-01': {
-        title: 'Introduction to Prompt Engineering',
+        title: 'Introduction to Prompt',
         summary: 'Understand the fundamental role of prompts in AI image and video generation.',
         objectives: [
             'Define Prompt Engineering in the context of Visual AI',

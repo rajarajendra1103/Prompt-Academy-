@@ -193,7 +193,7 @@ const Lesson = () => {
                         </section>
 
                         <section className="lesson-section warning">
-                            <h2 className="section-header"><AlertTriangle size={22} /> Pitfall Gallery</h2>
+                            <h2 className="section-header"><AlertTriangle size={22} /> Pitfall Gallery - What NOT to Do</h2>
                             <ul className="pitfall-list">
                                 {lessonData.pitfalls?.map((pitfall, idx) => (
                                     <li key={idx}>

@@ -113,7 +113,7 @@ const PromptLibrary = () => {
                                     <h3 className="card-title">{p.title}</h3>
                                 </div>
                                 <div className="card-body">
-                                    <div className="preview-container" style={{ background: '#000', padding: '1rem', display: 'block', height: 'auto', minHeight: '120px' }}>
+                                    <div className="preview-container" style={{ background: 'var(--bg-code)', padding: '1rem', display: 'block', height: 'auto', minHeight: '120px' }}>
                                         <code style={{ fontSize: '0.8rem', color: '#94a3b8', lineHeight: '1.5', display: 'block', whiteSpace: 'pre-wrap' }}>
                                             {p.prompt}
                                         </code>
@@ -132,9 +132,10 @@ const PromptLibrary = () => {
                                                 marginLeft: '1rem',
                                                 padding: '0.75rem',
                                                 borderRadius: '0.75rem',
-                                                background: copyStatus === p.id ? 'var(--accent-cyan)' : 'rgba(255,255,255,0.05)',
+                                                background: copyStatus === p.id ? 'var(--accent-cyan)' : 'var(--bg-hover)',
                                                 color: copyStatus === p.id ? '#000' : 'var(--text-secondary)',
-                                                transition: 'all 0.3s ease'
+                                                transition: 'all 0.3s ease',
+                                                cursor: 'pointer'
                                             }}
                                         >
                                             {copyStatus === p.id ? <CheckCircle size={18} /> : <Copy size={18} />}

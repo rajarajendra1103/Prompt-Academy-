@@ -14,7 +14,7 @@ const webDevModule1 = {
         // ============================================
         {
             lessonCode: 'WP-IP-01',
-            title: 'Introduction to Prompt Engineering',
+            title: 'Introduction to Prompt',
             summary: 'Learn the fundamentals of prompt engineering and how AI can transform your web development workflow from idea to deployment.',
             objectives: [
                 'Understand what prompt engineering is and why it matters for web development',

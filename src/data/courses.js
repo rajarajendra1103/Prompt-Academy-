@@ -6,7 +6,7 @@ export const coursesData = {
                 id: 'wp-m1',
                 title: 'Module 1: Idea → Prompts (Website Planning & Structure)',
                 lessons: [
-                    { id: 'wp-m1-01', title: '01: Introduction to Prompt Engineering' },
+                    { id: 'wp-m1-01', title: '01: Introduction to Prompt' },
                     { id: 'wp-m1-02', title: '02: Anatomy of an Effective Prompt' },
                     { id: 'wp-m1-03', title: '03: Converting a Website Idea into a Clear Goal' },
                     { id: 'wp-m1-04', title: '04: Website Type Identification (Portfolio, E-commerce, Blog, SaaS, Landing Page etc)' },
@@ -151,7 +151,7 @@ export const coursesData = {
                 id: 'ap-m1',
                 title: 'Module 1: Idea → Prompts',
                 lessons: [
-                    { id: 'ap-ip-01', title: 'IP-01: Introduction to Prompt Engineering' },
+                    { id: 'ap-ip-01', title: 'IP-01: Introduction to Prompt' },
                     { id: 'ap-ip-02', title: 'IP-02: Anatomy of an Effective Prompt' },
                     { id: 'ap-ip-03', title: 'IP-03: Turning an App Idea into a Clear Problem Statement' },
                     { id: 'ap-ip-04', title: 'IP-04: App Type Identification (E-commerce, Game, SaaS, Landing Page etc)' },
@@ -295,7 +295,7 @@ export const coursesData = {
                 id: 'iv-m1',
                 title: 'Module 1: Idea → Prompts',
                 lessons: [
-                    { id: 'iv-ip-01', title: '01: Introduction to Prompt Engineering' },
+                    { id: 'iv-ip-01', title: '01: Introduction to Prompt' },
                     { id: 'iv-ip-02', title: '02: Visual Thinking & Idea Clarity' },
                     { id: 'iv-ip-03', title: '03: Converting Ideas into Visual Descriptions' },
                     { id: 'iv-ip-04', title: '04: Prompt Anatomy (Who, What, Where, How)' },

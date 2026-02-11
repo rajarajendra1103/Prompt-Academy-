@@ -11,10 +11,10 @@
 
 .navbar-scrolled {
     padding: 0.75rem 0;
-    background: rgba(15, 23, 42, 0.9);
+    background: var(--bg-scrolled);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav-content {
@@ -49,7 +49,7 @@
 
 .logo-text {
     font-family: 'Lexend', sans-serif;
-    color: white;
+    color: var(--text-primary);
     display: flex;
     align-items: center;
 }
@@ -78,7 +78,7 @@
 }
 
 .nav-link-item {
-    color: #94a3b8;
+    color: var(--text-secondary);
     font-size: 0.875rem;
     font-weight: 500;
     display: flex;
@@ -113,7 +113,7 @@
 
 .nav-toggle-mobile {
     display: block;
-    color: white;
+    color: var(--text-primary);
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -132,7 +132,7 @@
     right: -100%;
     width: 100%;
     height: 100vh;
-    background: #0F172A;
+    background: var(--bg-secondary);
     z-index: 999;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 100px 2rem;
@@ -151,12 +151,35 @@
 .mobile-link-item {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #94a3b8;
+    color: var(--text-secondary);
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .mobile-link-item.active {
-    color: white;
+    color: var(--text-primary);
 }
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.theme-toggle {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-blue);
+    background: var(--bg-hover);
+}
+
+/* Adjust mobile toggle to be inside nav-actions if needed, or just let flex handle it */

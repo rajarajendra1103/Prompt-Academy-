@@ -1,11 +1,11 @@
 .dictionary-custom-page {
     --primary-violet: #7C3AED;
     --accent-cyan: #06B6D4;
-    --bg-dark: #0F172A;
-    --surface-card: #1E293B;
+    --bg-dark: var(--bg-primary);
+    --surface-card: var(--bg-secondary);
     background-color: var(--bg-dark);
     min-height: 100vh;
-    color: #cbd5e1;
+    color: var(--text-secondary);
     font-family: 'Lexend', sans-serif;
     font-size: 14px;
     /* Default scaling factor */
@@ -35,14 +35,14 @@
     font-size: clamp(2.5rem, 8vw, 3.5rem);
     /* Reduced size */
     font-weight: 900;
-    color: white;
+    color: var(--text-primary);
     line-height: 1;
     letter-spacing: -0.05em;
     margin: 0;
 }
 
 .hero-subtitle {
-    color: #94a3b8;
+    color: var(--text-secondary);
     font-size: 1.125rem;
     /* Reduced from 1.25rem */
     font-weight: 300;
@@ -54,14 +54,14 @@
 .dictionary-controls-sticky {
     position: sticky;
     top: 80px;
-    background: rgba(15, 23, 42, 0.95);
+    background: var(--bg-scrolled);
     backdrop-filter: blur(12px);
     padding: 2rem 0;
     z-index: 40;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-color);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
 }
 
@@ -79,7 +79,7 @@
     display: flex;
     align-items: center;
     background: var(--surface-card);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
     border-radius: 1rem;
     height: 4rem;
     padding: 0 1.5rem;
@@ -103,7 +103,7 @@
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: var(--text-primary);
     font-size: 1.25rem;
     font-weight: 500;
     padding: 0 1.5rem;
@@ -120,13 +120,13 @@
 }
 
 .kbd {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--btn-secondary-bg);
+    border: 1px solid var(--btn-secondary-border);
     padding: 0.375rem 0.75rem;
     border-radius: 0.5rem;
     font-size: 11px;
     font-weight: 900;
-    color: #94a3b8;
+    color: var(--text-secondary);
 }
 
 /* Alphabet Nav */
@@ -147,7 +147,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #64748b;
+    color: var(--text-secondary);
     font-weight: 900;
     font-size: 0.875rem;
     transition: all 0.2s ease;
@@ -177,7 +177,7 @@
     background: var(--surface-card);
     border-radius: 1rem;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
@@ -191,7 +191,7 @@
 
 .card-header {
     padding: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-color);
     background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), transparent);
 }
 
@@ -223,7 +223,7 @@
 .card-title {
     font-size: 1.875rem;
     font-weight: 900;
-    color: white;
+    color: var(--text-primary);
     margin: 1.5rem 0 0;
     transition: color 0.3s ease;
 }
@@ -253,7 +253,7 @@
 }
 
 .card-description {
-    color: #94a3b8;
+    color: var(--text-secondary);
     font-size: 0.875rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;

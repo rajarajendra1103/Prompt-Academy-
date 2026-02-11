@@ -38,7 +38,7 @@
 
 .module-info {
     padding: 1.5rem 2rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-hover);
     border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
 }
 
 .lesson-row:hover {
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--bg-hover);
 }
 
 .lesson-left {

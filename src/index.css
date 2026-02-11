@@ -16,6 +16,35 @@
   --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
   --transition-fast: 0.2s ease;
   --transition-slow: 0.4s ease;
+  --bg-scrolled: rgba(15, 23, 42, 0.9);
+  --bg-hero-gradient: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #0F172A 100%);
+  --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+  --btn-secondary-border: rgba(255, 255, 255, 0.1);
+  --bg-subtle: rgba(255, 255, 255, 0.03);
+  --bg-code: #000000;
+  --bg-sidebar: rgba(15, 23, 42, 0.4);
+  --text-error: #fda4af;
+  --bg-hover: rgba(255, 255, 255, 0.05);
+}
+
+:root.light-mode {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  --bg-scrolled: rgba(255, 255, 255, 0.9);
+  --bg-hero-gradient: radial-gradient(circle at 50% 50%, #f0f9ff 0%, #e0f2fe 100%);
+  --btn-secondary-bg: rgba(0, 0, 0, 0.05);
+  --btn-secondary-border: rgba(0, 0, 0, 0.1);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --bg-subtle: rgba(0, 0, 0, 0.03);
+  --bg-code: #f1f5f9;
+  --bg-sidebar: rgba(255, 255, 255, 0.5);
+  --text-error: #ef4444;
+  --bg-hover: rgba(0, 0, 0, 0.05);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 * {
