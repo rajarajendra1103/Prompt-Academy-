@@ -77,7 +77,7 @@ const PromptLibrary = () => {
                 <div className="dictionary-content-wrapper">
                     {/* Header Section */}
                     <div className="dictionary-hero">
-                        <h1 className="hero-title">Prompt Library</h1>
+                        <h6 className="hero-title">Prompt Library</h6>
                         <p className="hero-subtitle">
                             The ultimate repository of high-performance technical prompts. Master the art of instruction to unlock production-ready code and cinematic visuals.
                         </p>
