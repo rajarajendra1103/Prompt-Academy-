@@ -3,11 +3,12 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
     ArrowLeft, Target, BookOpen, HelpCircle,
     Terminal, AlertTriangle, Key, Youtube, FileText,
-    ChevronLeft, ChevronRight, ChevronDown, List, CheckCircle
+    ChevronLeft, ChevronRight, ChevronDown, List, CheckCircle, Sparkles
 } from 'lucide-react';
 import { webDevContent } from '../data/webDevContent';
 import { appDevContent } from '../data/appDevContent';
 import { imageVideoContent } from '../data/imageVideoContent';
+import { promptFoundationsContent } from '../data/promptFoundationsContent';
 import { coursesData } from '../data/courses';
 import './Lesson.css';
 
@@ -26,6 +27,7 @@ const Lesson = () => {
         'web-dev': webDevContent,
         'app-dev': appDevContent,
         'image-video': imageVideoContent,
+        'prompt-foundations': promptFoundationsContent,
         // Add others as they are created
     };
 
@@ -139,7 +141,7 @@ const Lesson = () => {
 
                     <main className="lesson-main-content">
                         <section className="lesson-section">
-                            <h2 className="section-header"><BookOpen size={22} /> Theory</h2>
+                            <h2 className="section-header"><BookOpen size={22} /> Concept</h2>
                             <div className="theory-content">
                                 {Array.isArray(lessonData.theory) ? (
                                     lessonData.theory.map((para, idx) => (
@@ -162,35 +164,60 @@ const Lesson = () => {
                         </section>
 
                         <section className="lesson-section highlight">
-                            <h2 className="section-header"><HelpCircle size={22} /> The "Why"</h2>
+                            <h2 className="section-header"><HelpCircle size={22} /> Why It Matters</h2>
                             <p className="why-text">{lessonData.why}</p>
                         </section>
 
                         <section className="lesson-section">
-                            <h2 className="section-header"><Terminal size={22} /> Task Prompt</h2>
+                            <h2 className="section-header"><Terminal size={22} /> Prompt Pattern / Formula</h2>
                             {lessonData.prompts && (
-                                <div className="prompt-comparison">
-                                    <div className="prompt-box before">
-                                        <span className="label">Common Prompt (Avoid)</span>
-                                        <code>{lessonData.prompts.before}</code>
-                                        {lessonData.prompts.resultBefore && (
-                                            <div className="result-preview">
-                                                <small>Result: {lessonData.prompts.resultBefore}</small>
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div className="prompt-box after">
-                                        <span className="label">Academy Prompt (Better)</span>
-                                        <code>{lessonData.prompts.after}</code>
-                                        {lessonData.prompts.resultAfter && (
-                                            <div className="result-preview">
-                                                <small>Result: {lessonData.prompts.resultAfter}</small>
-                                            </div>
-                                        )}
+                                <div className="prompt-details">
+                                    {lessonData.prompts.formula && (
+                                        <div className="formula-box glass">
+                                            <span className="label">Structure / Formula</span>
+                                            <code className="formula">{lessonData.prompts.formula}</code>
+                                        </div>
+                                    )}
+                                    <div className="prompt-comparison">
+                                        <div className="prompt-box before">
+                                            <span className="label">Standard Input</span>
+                                            <code>{lessonData.prompts.before}</code>
+                                            {lessonData.prompts.resultBefore && (
+                                                <div className="result-preview">
+                                                    <small>Result: {lessonData.prompts.resultBefore}</small>
+                                                </div>
+                                            )}
+                                        </div>
+                                        <div className="prompt-box after">
+                                            <span className="label">Engaged Prompt</span>
+                                            <code>{lessonData.prompts.after}</code>
+                                            {lessonData.prompts.resultAfter && (
+                                                <div className="result-preview">
+                                                    <small>Result: {lessonData.prompts.resultAfter}</small>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             )}
                         </section>
+
+                        {lessonData.examples && (
+                            <section className="lesson-section">
+                                <h2 className="section-header"><Sparkles size={22} /> Examples</h2>
+                                <div className="examples-grid">
+                                    {lessonData.examples.map((ex, idx) => (
+                                        <div key={idx} className="example-card glass">
+                                            <span className="example-type">{ex.type}</span>
+                                            <p className="example-desc">{ex.description}</p>
+                                            <div className="example-code">
+                                                <code>{ex.prompt}</code>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
 
                         <section className="lesson-section warning">
                             <h2 className="section-header"><AlertTriangle size={22} /> Pitfall Gallery - What NOT to Do</h2>

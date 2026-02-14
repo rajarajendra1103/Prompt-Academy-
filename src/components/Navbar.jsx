@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Sparkles, Menu, X, BookOpen, Library, Layout, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
-import logo from '../assets/logo.png.png';
+import logo from '../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {

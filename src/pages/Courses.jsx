@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Cpu, Image as ImageIcon } from 'lucide-react';
+import { ArrowRight, Code, Cpu, Image as ImageIcon, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Courses.css';
 
@@ -29,8 +29,8 @@ const Courses = () => {
                                 <h3 className="course-title">{course.title}</h3>
                                 <p className="course-description">{course.description}</p>
                                 <div className="course-stats">
-                                    <span>8 Modules</span>
-                                    <span>42 Lessons</span>
+                                    <span>{course.modules || 8} Modules</span>
+                                    <span>{course.lessons || 42} Lessons</span>
                                 </div>
                                 <Link to={`/curriculum/${course.id}`} className="btn-explore">
                                     Explore Curriculum <ArrowRight size={18} />
@@ -45,6 +45,15 @@ const Courses = () => {
 };
 
 const availableCourses = [
+    {
+        id: 'prompt-foundations',
+        title: 'Foundations of Prompt Engineering',
+        description: 'Master the core principles and advanced techniques of AI communication.',
+        icon: <Zap size={28} />,
+        color: 'yellow',
+        modules: 8,
+        lessons: 58
+    },
     {
         id: 'web-dev',
         title: 'Web Development',

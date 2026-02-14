@@ -394,5 +394,116 @@ export const coursesData = {
                 ]
             }
         ]
+    },
+    'prompt-foundations': {
+        title: 'Foundations of Prompt Engineering',
+        modules: [
+            {
+                id: 'pf-m1',
+                title: 'Module 1: Foundations of Prompt Engineering',
+                lessons: [
+                    { id: 'pf-m1-01', title: '01: What is Prompt Engineering' },
+                    { id: 'pf-m1-02', title: '02: How Large Language Models Work' },
+                    { id: 'pf-m1-03', title: '03: Tokens, Context, and Temperature' },
+                    { id: 'pf-m1-04', title: '04: Prompt vs Completion' },
+                    { id: 'pf-m1-05', title: '05: Types of Prompts' },
+                    { id: 'pf-m1-06', title: '06: Zero-Shot Prompting' },
+                    { id: 'pf-m1-07', title: '07: One-Shot Prompting' },
+                    { id: 'pf-m1-08', title: '08: Few-Shot Prompting' }
+                ]
+            },
+            {
+                id: 'pf-m2',
+                title: 'Module 2: Core Prompting Techniques',
+                lessons: [
+                    { id: 'pf-m2-01', title: '01: Instruction-Based Prompting' },
+                    { id: 'pf-m2-02', title: '02: Role-Based Prompting' },
+                    { id: 'pf-m2-03', title: '03: Chain-of-Thought Prompting' },
+                    { id: 'pf-m2-04', title: '04: Step-by-Step Reasoning' },
+                    { id: 'pf-m2-05', title: '05: Output Formatting Prompts' },
+                    { id: 'pf-m2-06', title: '06: Constrained Prompts' },
+                    { id: 'pf-m2-07', title: '07: Structured Prompts' },
+                    { id: 'pf-m2-08', title: '08: Iterative Prompting' }
+                ]
+            },
+            {
+                id: 'pf-m3',
+                title: 'Module 3: Prompt Patterns and Strategies',
+                lessons: [
+                    { id: 'pf-m3-01', title: '01: ReAct (Reason + Act) Pattern' },
+                    { id: 'pf-m3-02', title: '02: Tree-of-Thought Prompting' },
+                    { id: 'pf-m3-03', title: '03: Self-Consistency Prompting' },
+                    { id: 'pf-m3-04', title: '04: Socratic Prompting' },
+                    { id: 'pf-m3-05', title: '05: Meta-Prompting' },
+                    { id: 'pf-m3-06', title: '06: Reflective Prompting' },
+                    { id: 'pf-m3-07', title: '07: Decomposition Prompts' },
+                    { id: 'pf-m3-08', title: '08: Prompt Chaining' }
+                ]
+            },
+            {
+                id: 'pf-m4',
+                title: 'Module 4: Context and Knowledge Techniques',
+                lessons: [
+                    { id: 'pf-m4-01', title: '01: Context Injection' },
+                    { id: 'pf-m4-02', title: '02: Retrieval-Augmented Generation (RAG)' },
+                    { id: 'pf-m4-03', title: '03: Knowledge Grounding' },
+                    { id: 'pf-m4-04', title: '04: Document-Based Prompting' },
+                    { id: 'pf-m4-05', title: '05: Multi-Turn Conversation Prompts' },
+                    { id: 'pf-m4-06', title: '06: Memory in Prompts' }
+                ]
+            },
+            {
+                id: 'pf-m5',
+                title: 'Module 5: Task-Specific Prompting',
+                lessons: [
+                    { id: 'pf-m5-01', title: '01: Text Generation Prompts' },
+                    { id: 'pf-m5-02', title: '02: Summarization Prompts' },
+                    { id: 'pf-m5-03', title: '03: Translation Prompts' },
+                    { id: 'pf-m5-04', title: '04: Code Generation Prompts' },
+                    { id: 'pf-m5-05', title: '05: Data Analysis Prompts' },
+                    { id: 'pf-m5-06', title: '06: Creative Writing Prompts' },
+                    { id: 'pf-m5-07', title: '07: Question-Answering Prompts' },
+                    { id: 'pf-m5-08', title: '08: Classification Prompts' }
+                ]
+            },
+            {
+                id: 'pf-m6',
+                title: 'Module 6: Advanced Prompt Engineering',
+                lessons: [
+                    { id: 'pf-m6-01', title: '01: Tool-Using Prompts' },
+                    { id: 'pf-m6-02', title: '02: Function Calling Prompts' },
+                    { id: 'pf-m6-03', title: '03: Agent-Style Prompting' },
+                    { id: 'pf-m6-04', title: '04: Multi-Agent Prompt Systems' },
+                    { id: 'pf-m6-05', title: '05: Prompt Optimization' },
+                    { id: 'pf-m6-06', title: '06: Prompt Evaluation Metrics' },
+                    { id: 'pf-m6-07', title: '07: Automated Prompt Tuning' },
+                    { id: 'pf-m6-08', title: '08: Prompt Versioning' }
+                ]
+            },
+            {
+                id: 'pf-m7',
+                title: 'Module 7: Safety, Ethics, and Reliability',
+                lessons: [
+                    { id: 'pf-m7-01', title: '01: Prompt Injection Attacks' },
+                    { id: 'pf-m7-02', title: '02: Jailbreak Prompts' },
+                    { id: 'pf-m7-03', title: '03: Bias in Prompts' },
+                    { id: 'pf-m7-04', title: '04: Hallucination Reduction' },
+                    { id: 'pf-m7-05', title: '05: Guardrails in Prompts' },
+                    { id: 'pf-m7-06', title: '06: Ethical Prompt Design' }
+                ]
+            },
+            {
+                id: 'pf-m8',
+                title: 'Module 8: Real-World Applications',
+                lessons: [
+                    { id: 'pf-m8-01', title: '01: Chatbot Prompt Design' },
+                    { id: 'pf-m8-02', title: '02: AI Assistants' },
+                    { id: 'pf-m8-03', title: '03: Prompting for Business Tasks' },
+                    { id: 'pf-m8-04', title: '04: Prompting for Education' },
+                    { id: 'pf-m8-05', title: '05: Prompting for Research' },
+                    { id: 'pf-m8-06', title: '06: Prompting for Design and Media' }
+                ]
+            }
+        ]
     }
 };
