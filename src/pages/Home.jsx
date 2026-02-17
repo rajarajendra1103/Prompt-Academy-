@@ -125,29 +125,31 @@ const Home = () => {
             <section className="courses-section">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">Expore Our <span className="text-neon">Paths</span></h2>
+                        <h2 className="section-title">Explore Our <span className="text-neon">Paths</span></h2>
                         <p className="section-desc">Choose your specialty and start building immediately.</p>
                     </div>
 
                     <div className="courses-grid">
                         {courses.map((course, index) => (
-                            <motion.div
-                                key={course.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
-                                className="course-card glass"
-                            >
-                                <div className="course-card-inner">
-                                    <div className="icon-wrapper">
-                                        {course.icon}
+                            <Link to={course.link} key={course.id}>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: index * 0.1 }}
+                                    className="course-card glass"
+                                    style={{ height: '100%' }}
+                                >
+                                    <div className="course-card-inner">
+                                        <div className="icon-wrapper">
+                                            {course.icon}
+                                        </div>
+                                        <h3 className="course-title">{course.title}</h3>
+                                        <p className="course-desc">{course.desc}</p>
                                     </div>
-                                    <h3 className="course-title">{course.title}</h3>
-                                    <p className="course-desc">{course.desc}</p>
-                                </div>
-                                <div className="card-glimmer"></div>
-                            </motion.div>
+                                    <div className="card-glimmer"></div>
+                                </motion.div>
+                            </Link>
                         ))}
                     </div>
                 </div>

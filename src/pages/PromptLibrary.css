@@ -1,3 +1,38 @@
 .library-page {
     padding: 0;
 }
+
+.flex-row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.copy-btn-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+
+.copy-btn-custom:hover {
+    background: var(--accent-cyan) !important;
+    color: #000 !important;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .flex-row-between {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1rem;
+    }
+
+    .copy-btn-custom {
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 0.5rem !important;
+    }
+}

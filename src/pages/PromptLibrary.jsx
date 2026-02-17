@@ -119,7 +119,7 @@ const PromptLibrary = () => {
                                         </code>
                                     </div>
 
-                                    <div className="flex-row-between" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
+                                    <div className="flex-row-between">
                                         <div className="tag-container" style={{ flex: 1 }}>
                                             {p.tags.map(tag => (
                                                 <span key={tag} className="tag">#{tag}</span>
@@ -129,11 +129,11 @@ const PromptLibrary = () => {
                                             onClick={() => copyToClipboard(p.prompt, p.id)}
                                             className="copy-btn-custom"
                                             style={{
+                                                background: copyStatus === p.id ? 'var(--accent-cyan)' : 'var(--bg-hover)',
+                                                color: copyStatus === p.id ? '#000' : 'var(--text-secondary)',
                                                 marginLeft: '1rem',
                                                 padding: '0.75rem',
                                                 borderRadius: '0.75rem',
-                                                background: copyStatus === p.id ? 'var(--accent-cyan)' : 'var(--bg-hover)',
-                                                color: copyStatus === p.id ? '#000' : 'var(--text-secondary)',
                                                 transition: 'all 0.3s ease',
                                                 cursor: 'pointer'
                                             }}
